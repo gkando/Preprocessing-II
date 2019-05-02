@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-btn(@radius, @color){
+	border-radius: @radius;
+    background-color: @color;
+    color: @white;
+    font-size: 16px;
+    text-align: center;
+    padding: 1.2rem;
+    width: 75%;
+}
+// usage
+.destination {
+    .btn {
+        .custom-btn(10px, @button-bg);
+    }
+}
+

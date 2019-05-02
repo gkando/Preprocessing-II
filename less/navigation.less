@@ -2,6 +2,10 @@
 header {
     border-bottom:  2px @navigation-border dashed;
 
+    @media @mobile {
+        // background-color: plum;
+        // border: 2px red solid;
+      }
     .header-section {
         // margin: 30px 0;
         margin: auto;
@@ -11,6 +15,10 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media @mobile {
+            align-items: center;
+            flex-direction: column;
+          }
 
         .nav-menu {
             margin: 0;
@@ -23,6 +31,11 @@ header {
             // padding: 20px 2%;
             font-size: 16px;
             // width: 48%;
+            @media @mobile {
+                justify-content: space-around;
+                width: 85%;
+
+              }
         
             a {
                 display: block;
